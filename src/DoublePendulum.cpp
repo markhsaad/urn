@@ -1,4 +1,4 @@
-#include "../include/DoublePendulum.hpp"
+#include "../include/Environments/DoublePendulum.hpp"
 
 DoublePendulum::DoublePendulum(double tf, double dt, Eigen::VectorXd x) {
     Environment::x = x;
