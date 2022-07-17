@@ -23,14 +23,14 @@ class Environment {
 
         // Function to check when the simulation is done
         bool isDone();
+
+        // Pure virtual function to define the dynamics of the environment: dx/dt = f(x, u)
+        virtual Eigen::VectorXd f(Eigen::VectorXd x, Eigen::VectorXd u) = 0;
     
     private:
         // Variable(s)
         std::vector<Eigen::VectorXd> X; // array to store the state over time
         std::vector<Eigen::VectorXd> U; // array to store the input over time
-
-        // Pure virtual function to define the dynamics of the environment: dx/dt = f(x, u)
-        virtual Eigen::VectorXd f(Eigen::VectorXd x, Eigen::VectorXd u) = 0;
 
     protected:
         // Variable(s)

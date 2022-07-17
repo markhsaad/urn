@@ -19,7 +19,7 @@ class SinglePendulum : public Environment {
 
         // Function to define the dynamics of the double pendulum environment 
         Eigen::VectorXd f(Eigen::VectorXd x, Eigen::VectorXd u);
-    
+
     private:
         double l = 1; // length [m]
         double m = 1; // mass   [kg]
