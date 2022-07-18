@@ -7,10 +7,8 @@ int main() {
     // doublePendulumWithFeedbackLinearization();
 
     /****************************** URN 2 ******************************/
-    // Set bounds to be whole number. Otherwise the numbers may not be equally spaced and streamplot() in Python will have a stroke
-
-    // phasePortraitWithZeroInput(-3, 3, -3, 3, 150, 150);
-    phasePortraitWithDamping(-3, 3, -3, 3, 150, 150);
+    // phasePortraitWithZeroInput(-5, 5, -5, 5, 200, 200); // Set bounds to be whole number (e.g. (-10, 10)). Otherwise the numbers may not be equally spaced and streamplot() in Python will have a stroke
+    phasePortraitWithDamping(-5, 5, -5, 5, 200, 200);
 
     return 0;
 }

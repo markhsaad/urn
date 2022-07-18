@@ -8,4 +8,4 @@ file = os.path.join(folder, "phasePortrait.txt")
 # Plot the phase portrait
 sys.path.append(os.path.join(folder, "..")) # add higher level directory to the path to access PhasePortrait.py
 import PhasePortrait
-PhasePortrait.plotPhasePortrait(file)
+PhasePortrait.plotPhasePortrait(file, "BP14_URN2_F2.png")
